@@ -4,12 +4,12 @@ from speciallecture.CSVPrinter import CSVPrinter
 class TestCSVPrinter(unittest.TestCase):
 
     def test_read1(self):
-        printer = CSVPrinter("../sample.csv")
+        printer = CSVPrinter("sample.csv")
         l = printer.read()
         self.assertEqual(3, len(l))
 
     def test_read2(self):
-        printer = CSVPrinter("../sample.csv")
+        printer = CSVPrinter("sample.csv")
         l = printer.read()
         print(l)
         self.assertEqual(['value1A', ' value1B', ' value1C'], l[0])
